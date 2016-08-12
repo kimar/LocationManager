@@ -10,6 +10,8 @@
 		07055F6F1D5E0D16001749A6 /* LocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 07055F6E1D5E0D16001749A6 /* LocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07055F761D5E0D16001749A6 /* LocationManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07055F6B1D5E0D16001749A6 /* LocationManager.framework */; };
 		07055F7B1D5E0D16001749A6 /* LocationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07055F7A1D5E0D16001749A6 /* LocationManagerTests.swift */; };
+		07055F861D5E0DE8001749A6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07055F851D5E0DE8001749A6 /* LocationManager.swift */; };
+		07055F881D5E1278001749A6 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07055F871D5E1278001749A6 /* ReactiveCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		07055F751D5E0D16001749A6 /* LocationManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07055F7A1D5E0D16001749A6 /* LocationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerTests.swift; sourceTree = "<group>"; };
 		07055F7C1D5E0D16001749A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07055F851D5E0DE8001749A6 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		07055F871D5E1278001749A6 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07055F881D5E1278001749A6 /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +58,7 @@
 		07055F611D5E0D16001749A6 = {
 			isa = PBXGroup;
 			children = (
+				07055F871D5E1278001749A6 /* ReactiveCocoa.framework */,
 				07055F6D1D5E0D16001749A6 /* LocationManager */,
 				07055F791D5E0D16001749A6 /* LocationManagerTests */,
 				07055F6C1D5E0D16001749A6 /* Products */,
@@ -71,6 +77,7 @@
 		07055F6D1D5E0D16001749A6 /* LocationManager */ = {
 			isa = PBXGroup;
 			children = (
+				07055F851D5E0DE8001749A6 /* LocationManager.swift */,
 				07055F6E1D5E0D16001749A6 /* LocationManager.h */,
 				07055F701D5E0D16001749A6 /* Info.plist */,
 			);
@@ -194,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07055F861D5E0DE8001749A6 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,26 +318,37 @@
 		07055F801D5E0D16001749A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LocationManager/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.kida.LocationManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		07055F811D5E0D16001749A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LocationManager/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
