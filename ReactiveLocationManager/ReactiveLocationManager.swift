@@ -1,12 +1,12 @@
 import ReactiveCocoa
 
-enum LocationError: ErrorType {
+public enum LocationError: ErrorType {
     case NoError, FailedFetching
 }
 
 typealias LocationObserver = Observer<CLLocation?, LocationError>
 
-final class LocationManager: NSObject, CLLocationManagerDelegate {
+public final class ReactiveLocationManager: NSObject, CLLocationManagerDelegate {
     
     private var observer: LocationObserver?
     private var disposable: Disposable?
@@ -14,7 +14,7 @@ final class LocationManager: NSObject, CLLocationManagerDelegate {
     
     private let locationManager = CLLocationManager()
     
-    func updates(single: Bool = true) -> SignalProducer<CLLocation?, LocationError> {
+    public func updates(single: Bool = true) -> SignalProducer<CLLocation?, LocationError> {
         singleUse = single
         return SignalProducer { [weak self] observer, disposable in
             self?.observer = observer
@@ -24,16 +24,16 @@ final class LocationManager: NSObject, CLLocationManagerDelegate {
         }
     }
     
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    public func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         send((manager, locations.first as CLLocation!, nil))
     }
     
-    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+    public func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         send((manager, nil, .FailedFetching))
     }
 }
 
-private extension LocationManager {
+private extension ReactiveLocationManager {
     func send(next: (CLLocationManager, CLLocation?, LocationError?)) {
         if singleUse { next.0.stopUpdatingLocation() }
         guard let observer = observer else { return }
@@ -42,6 +42,6 @@ private extension LocationManager {
         } else if let location = next.1 {
             observer.sendNext(location)
         }
-        disposable?.dispose()
+        if singleUse { disposable?.dispose() }
     }
 }
