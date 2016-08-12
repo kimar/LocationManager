@@ -1,15 +1,15 @@
 //
-//  LocationManagerTests.swift
-//  LocationManagerTests
+//  ReactiveLocationManagerTests.swift
+//  ReactiveLocationManagerTests
 //
-//  Created by Marcus Kida on 12/08/2016.
+//  Created by Marcus Kida on 13/08/2016.
 //  Copyright © 2016 Marcus Kida. All rights reserved.
 //
 
 import XCTest
-@testable import LocationManager
+@testable import ReactiveLocationManager
 
-class LocationManagerTests: XCTestCase {
+class ReactiveLocationManagerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

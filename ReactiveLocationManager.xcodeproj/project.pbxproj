@@ -7,187 +7,195 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07055F6F1D5E0D16001749A6 /* LocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 07055F6E1D5E0D16001749A6 /* LocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		07055F761D5E0D16001749A6 /* LocationManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07055F6B1D5E0D16001749A6 /* LocationManager.framework */; };
-		07055F7B1D5E0D16001749A6 /* LocationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07055F7A1D5E0D16001749A6 /* LocationManagerTests.swift */; };
-		07055F861D5E0DE8001749A6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07055F851D5E0DE8001749A6 /* LocationManager.swift */; };
-		07055F881D5E1278001749A6 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07055F871D5E1278001749A6 /* ReactiveCocoa.framework */; };
+		07055F971D5E9102001749A6 /* ReactiveLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 07055F961D5E9102001749A6 /* ReactiveLocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07055F9E1D5E9103001749A6 /* ReactiveLocationManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07055F931D5E9102001749A6 /* ReactiveLocationManager.framework */; };
+		07055FA31D5E9103001749A6 /* ReactiveLocationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07055FA21D5E9103001749A6 /* ReactiveLocationManagerTests.swift */; };
+		07055FAE1D5E9110001749A6 /* ReactiveLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07055FAD1D5E9110001749A6 /* ReactiveLocationManager.swift */; };
+		07055FB11D5E91AB001749A6 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07055FB01D5E91AB001749A6 /* ReactiveCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		07055F771D5E0D16001749A6 /* PBXContainerItemProxy */ = {
+		07055F9F1D5E9103001749A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 07055F621D5E0D16001749A6 /* Project object */;
+			containerPortal = 07055F8A1D5E9102001749A6 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 07055F6A1D5E0D16001749A6;
-			remoteInfo = LocationManager;
+			remoteGlobalIDString = 07055F921D5E9102001749A6;
+			remoteInfo = ReactiveLocationManager;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07055F6B1D5E0D16001749A6 /* LocationManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocationManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		07055F6E1D5E0D16001749A6 /* LocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
-		07055F701D5E0D16001749A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07055F751D5E0D16001749A6 /* LocationManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		07055F7A1D5E0D16001749A6 /* LocationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerTests.swift; sourceTree = "<group>"; };
-		07055F7C1D5E0D16001749A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07055F851D5E0DE8001749A6 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		07055F871D5E1278001749A6 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		07055F931D5E9102001749A6 /* ReactiveLocationManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveLocationManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07055F961D5E9102001749A6 /* ReactiveLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveLocationManager.h; sourceTree = "<group>"; };
+		07055F981D5E9102001749A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07055F9D1D5E9103001749A6 /* ReactiveLocationManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveLocationManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07055FA21D5E9103001749A6 /* ReactiveLocationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveLocationManagerTests.swift; sourceTree = "<group>"; };
+		07055FA41D5E9103001749A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07055FAD1D5E9110001749A6 /* ReactiveLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveLocationManager.swift; sourceTree = "<group>"; };
+		07055FB01D5E91AB001749A6 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		07055F671D5E0D16001749A6 /* Frameworks */ = {
+		07055F8F1D5E9102001749A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07055F881D5E1278001749A6 /* ReactiveCocoa.framework in Frameworks */,
+				07055FB11D5E91AB001749A6 /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		07055F721D5E0D16001749A6 /* Frameworks */ = {
+		07055F9A1D5E9103001749A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07055F761D5E0D16001749A6 /* LocationManager.framework in Frameworks */,
+				07055F9E1D5E9103001749A6 /* ReactiveLocationManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07055F611D5E0D16001749A6 = {
+		07055F891D5E9102001749A6 = {
 			isa = PBXGroup;
 			children = (
-				07055F871D5E1278001749A6 /* ReactiveCocoa.framework */,
-				07055F6D1D5E0D16001749A6 /* LocationManager */,
-				07055F791D5E0D16001749A6 /* LocationManagerTests */,
-				07055F6C1D5E0D16001749A6 /* Products */,
+				07055F951D5E9102001749A6 /* ReactiveLocationManager */,
+				07055FAF1D5E911E001749A6 /* Frameworks */,
+				07055FA11D5E9103001749A6 /* ReactiveLocationManagerTests */,
+				07055F941D5E9102001749A6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		07055F6C1D5E0D16001749A6 /* Products */ = {
+		07055F941D5E9102001749A6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07055F6B1D5E0D16001749A6 /* LocationManager.framework */,
-				07055F751D5E0D16001749A6 /* LocationManagerTests.xctest */,
+				07055F931D5E9102001749A6 /* ReactiveLocationManager.framework */,
+				07055F9D1D5E9103001749A6 /* ReactiveLocationManagerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		07055F6D1D5E0D16001749A6 /* LocationManager */ = {
+		07055F951D5E9102001749A6 /* ReactiveLocationManager */ = {
 			isa = PBXGroup;
 			children = (
-				07055F851D5E0DE8001749A6 /* LocationManager.swift */,
-				07055F6E1D5E0D16001749A6 /* LocationManager.h */,
-				07055F701D5E0D16001749A6 /* Info.plist */,
+				07055FAD1D5E9110001749A6 /* ReactiveLocationManager.swift */,
+				07055F961D5E9102001749A6 /* ReactiveLocationManager.h */,
+				07055F981D5E9102001749A6 /* Info.plist */,
 			);
-			path = LocationManager;
+			path = ReactiveLocationManager;
 			sourceTree = "<group>";
 		};
-		07055F791D5E0D16001749A6 /* LocationManagerTests */ = {
+		07055FA11D5E9103001749A6 /* ReactiveLocationManagerTests */ = {
 			isa = PBXGroup;
 			children = (
-				07055F7A1D5E0D16001749A6 /* LocationManagerTests.swift */,
-				07055F7C1D5E0D16001749A6 /* Info.plist */,
+				07055FA21D5E9103001749A6 /* ReactiveLocationManagerTests.swift */,
+				07055FA41D5E9103001749A6 /* Info.plist */,
 			);
-			path = LocationManagerTests;
+			path = ReactiveLocationManagerTests;
+			sourceTree = "<group>";
+		};
+		07055FAF1D5E911E001749A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07055FB01D5E91AB001749A6 /* ReactiveCocoa.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		07055F681D5E0D16001749A6 /* Headers */ = {
+		07055F901D5E9102001749A6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07055F6F1D5E0D16001749A6 /* LocationManager.h in Headers */,
+				07055F971D5E9102001749A6 /* ReactiveLocationManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		07055F6A1D5E0D16001749A6 /* LocationManager */ = {
+		07055F921D5E9102001749A6 /* ReactiveLocationManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07055F7F1D5E0D16001749A6 /* Build configuration list for PBXNativeTarget "LocationManager" */;
+			buildConfigurationList = 07055FA71D5E9103001749A6 /* Build configuration list for PBXNativeTarget "ReactiveLocationManager" */;
 			buildPhases = (
-				07055F661D5E0D16001749A6 /* Sources */,
-				07055F671D5E0D16001749A6 /* Frameworks */,
-				07055F681D5E0D16001749A6 /* Headers */,
-				07055F691D5E0D16001749A6 /* Resources */,
+				07055F8E1D5E9102001749A6 /* Sources */,
+				07055F8F1D5E9102001749A6 /* Frameworks */,
+				07055F901D5E9102001749A6 /* Headers */,
+				07055F911D5E9102001749A6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LocationManager;
-			productName = LocationManager;
-			productReference = 07055F6B1D5E0D16001749A6 /* LocationManager.framework */;
+			name = ReactiveLocationManager;
+			productName = ReactiveLocationManager;
+			productReference = 07055F931D5E9102001749A6 /* ReactiveLocationManager.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		07055F741D5E0D16001749A6 /* LocationManagerTests */ = {
+		07055F9C1D5E9103001749A6 /* ReactiveLocationManagerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07055F821D5E0D16001749A6 /* Build configuration list for PBXNativeTarget "LocationManagerTests" */;
+			buildConfigurationList = 07055FAA1D5E9103001749A6 /* Build configuration list for PBXNativeTarget "ReactiveLocationManagerTests" */;
 			buildPhases = (
-				07055F711D5E0D16001749A6 /* Sources */,
-				07055F721D5E0D16001749A6 /* Frameworks */,
-				07055F731D5E0D16001749A6 /* Resources */,
+				07055F991D5E9103001749A6 /* Sources */,
+				07055F9A1D5E9103001749A6 /* Frameworks */,
+				07055F9B1D5E9103001749A6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				07055F781D5E0D16001749A6 /* PBXTargetDependency */,
+				07055FA01D5E9103001749A6 /* PBXTargetDependency */,
 			);
-			name = LocationManagerTests;
-			productName = LocationManagerTests;
-			productReference = 07055F751D5E0D16001749A6 /* LocationManagerTests.xctest */;
+			name = ReactiveLocationManagerTests;
+			productName = ReactiveLocationManagerTests;
+			productReference = 07055F9D1D5E9103001749A6 /* ReactiveLocationManagerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		07055F621D5E0D16001749A6 /* Project object */ = {
+		07055F8A1D5E9102001749A6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Marcus Kida";
 				TargetAttributes = {
-					07055F6A1D5E0D16001749A6 = {
+					07055F921D5E9102001749A6 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
-					07055F741D5E0D16001749A6 = {
+					07055F9C1D5E9103001749A6 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 07055F651D5E0D16001749A6 /* Build configuration list for PBXProject "LocationManager" */;
+			buildConfigurationList = 07055F8D1D5E9102001749A6 /* Build configuration list for PBXProject "ReactiveLocationManager" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 07055F611D5E0D16001749A6;
-			productRefGroup = 07055F6C1D5E0D16001749A6 /* Products */;
+			mainGroup = 07055F891D5E9102001749A6;
+			productRefGroup = 07055F941D5E9102001749A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				07055F6A1D5E0D16001749A6 /* LocationManager */,
-				07055F741D5E0D16001749A6 /* LocationManagerTests */,
+				07055F921D5E9102001749A6 /* ReactiveLocationManager */,
+				07055F9C1D5E9103001749A6 /* ReactiveLocationManagerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		07055F691D5E0D16001749A6 /* Resources */ = {
+		07055F911D5E9102001749A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		07055F731D5E0D16001749A6 /* Resources */ = {
+		07055F9B1D5E9103001749A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -197,34 +205,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		07055F661D5E0D16001749A6 /* Sources */ = {
+		07055F8E1D5E9102001749A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07055F861D5E0DE8001749A6 /* LocationManager.swift in Sources */,
+				07055FAE1D5E9110001749A6 /* ReactiveLocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		07055F711D5E0D16001749A6 /* Sources */ = {
+		07055F991D5E9103001749A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07055F7B1D5E0D16001749A6 /* LocationManagerTests.swift in Sources */,
+				07055FA31D5E9103001749A6 /* ReactiveLocationManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		07055F781D5E0D16001749A6 /* PBXTargetDependency */ = {
+		07055FA01D5E9103001749A6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 07055F6A1D5E0D16001749A6 /* LocationManager */;
-			targetProxy = 07055F771D5E0D16001749A6 /* PBXContainerItemProxy */;
+			target = 07055F921D5E9102001749A6 /* ReactiveLocationManager */;
+			targetProxy = 07055F9F1D5E9103001749A6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07055F7D1D5E0D16001749A6 /* Debug */ = {
+		07055FA51D5E9103001749A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -273,7 +281,7 @@
 			};
 			name = Debug;
 		};
-		07055F7E1D5E0D16001749A6 /* Release */ = {
+		07055FA61D5E9103001749A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -315,7 +323,7 @@
 			};
 			name = Release;
 		};
-		07055F801D5E0D16001749A6 /* Debug */ = {
+		07055FA81D5E9103001749A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -327,17 +335,17 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = LocationManager/Info.plist;
+				INFOPLIST_FILE = ReactiveLocationManager/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.kida.LocationManager;
+				PRODUCT_BUNDLE_IDENTIFIER = io.kida.ReactiveLocationManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		07055F811D5E0D16001749A6 /* Release */ = {
+		07055FA91D5E9103001749A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -349,31 +357,31 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = LocationManager/Info.plist;
+				INFOPLIST_FILE = ReactiveLocationManager/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.kida.LocationManager;
+				PRODUCT_BUNDLE_IDENTIFIER = io.kida.ReactiveLocationManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		07055F831D5E0D16001749A6 /* Debug */ = {
+		07055FAB1D5E9103001749A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = LocationManagerTests/Info.plist;
+				INFOPLIST_FILE = ReactiveLocationManagerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.kida.LocationManagerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.kida.ReactiveLocationManagerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		07055F841D5E0D16001749A6 /* Release */ = {
+		07055FAC1D5E9103001749A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = LocationManagerTests/Info.plist;
+				INFOPLIST_FILE = ReactiveLocationManagerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.kida.LocationManagerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.kida.ReactiveLocationManagerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -381,32 +389,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07055F651D5E0D16001749A6 /* Build configuration list for PBXProject "LocationManager" */ = {
+		07055F8D1D5E9102001749A6 /* Build configuration list for PBXProject "ReactiveLocationManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07055F7D1D5E0D16001749A6 /* Debug */,
-				07055F7E1D5E0D16001749A6 /* Release */,
+				07055FA51D5E9103001749A6 /* Debug */,
+				07055FA61D5E9103001749A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07055F7F1D5E0D16001749A6 /* Build configuration list for PBXNativeTarget "LocationManager" */ = {
+		07055FA71D5E9103001749A6 /* Build configuration list for PBXNativeTarget "ReactiveLocationManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07055F801D5E0D16001749A6 /* Debug */,
-				07055F811D5E0D16001749A6 /* Release */,
+				07055FA81D5E9103001749A6 /* Debug */,
+				07055FA91D5E9103001749A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		07055F821D5E0D16001749A6 /* Build configuration list for PBXNativeTarget "LocationManagerTests" */ = {
+		07055FAA1D5E9103001749A6 /* Build configuration list for PBXNativeTarget "ReactiveLocationManagerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07055F831D5E0D16001749A6 /* Debug */,
-				07055F841D5E0D16001749A6 /* Release */,
+				07055FAB1D5E9103001749A6 /* Debug */,
+				07055FAC1D5E9103001749A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 07055F621D5E0D16001749A6 /* Project object */;
+	rootObject = 07055F8A1D5E9102001749A6 /* Project object */;
 }
