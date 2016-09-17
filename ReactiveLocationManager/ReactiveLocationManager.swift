@@ -1,20 +1,21 @@
-import ReactiveCocoa
+import CoreLocation
+import ReactiveSwift
 
-public enum LocationError: ErrorType {
-    case NoError, FailedFetching
+public enum LocationError: Error {
+    case noError, failedFetching
 }
 
 typealias LocationObserver = Observer<CLLocation?, LocationError>
 
 public final class ReactiveLocationManager: NSObject, CLLocationManagerDelegate {
     
-    private var observer: LocationObserver?
-    private var disposable: Disposable?
-    private var singleUse = true
+    fileprivate var observer: LocationObserver?
+    fileprivate var disposable: Disposable?
+    fileprivate var singleUse = true
     
-    private let locationManager = CLLocationManager()
+    fileprivate let locationManager = CLLocationManager()
     
-    public func updates(single: Bool = true) -> SignalProducer<CLLocation?, LocationError> {
+    public func updates(_ single: Bool = true) -> SignalProducer<CLLocation?, LocationError> {
         singleUse = single
         return SignalProducer { [weak self] observer, disposable in
             self?.observer = observer
@@ -24,17 +25,17 @@ public final class ReactiveLocationManager: NSObject, CLLocationManagerDelegate 
         }
     }
     
-    public func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         send((manager, locations.first as CLLocation!, nil))
     }
     
-    public func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
-        send((manager, nil, .FailedFetching))
+    public func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        send((manager, nil, .failedFetching))
     }
 }
 
 private extension ReactiveLocationManager {
-    func send(next: (CLLocationManager, CLLocation?, LocationError?)) {
+    func send(_ next: (CLLocationManager, CLLocation?, LocationError?)) {
         if singleUse { next.0.stopUpdatingLocation() }
         guard let observer = observer else { return }
         if let error = next.2 {
