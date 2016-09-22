@@ -39,9 +39,9 @@ private extension ReactiveLocationManager {
         if singleUse { next.0.stopUpdatingLocation() }
         guard let observer = observer else { return }
         if let error = next.2 {
-            observer.sendFailed(error)
+            observer.send(error: error)
         } else if let location = next.1 {
-            observer.sendNext(location)
+            observer.send(value: location)
         }
         if singleUse { disposable?.dispose() }
     }
