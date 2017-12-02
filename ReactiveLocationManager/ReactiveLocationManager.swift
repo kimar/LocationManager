@@ -5,21 +5,21 @@ public enum LocationError: Error {
     case noError, failedFetching
 }
 
-typealias LocationObserver = Observer<CLLocation?, LocationError>
+typealias LocationObserver = Signal<CLLocation?, LocationError>.Observer
 
 public final class ReactiveLocationManager: NSObject, CLLocationManagerDelegate {
     
     fileprivate var observer: LocationObserver?
-    fileprivate var disposable: Disposable?
+    fileprivate var lifetime: Lifetime?
     fileprivate var singleUse = true
     
     fileprivate let locationManager = CLLocationManager()
     
     public func updates(_ single: Bool = true) -> SignalProducer<CLLocation?, LocationError> {
         singleUse = single
-        return SignalProducer { [weak self] observer, disposable in
+        return SignalProducer { [weak self] observer, lifetime in
             self?.observer = observer
-            self?.disposable = disposable
+            self?.lifetime = lifetime
             self?.locationManager.delegate = self
             self?.locationManager.startUpdatingLocation()
         }
@@ -43,6 +43,6 @@ private extension ReactiveLocationManager {
         } else if let location = next.1 {
             observer.send(value: location)
         }
-        if singleUse { disposable?.dispose() }
+        if singleUse { lifetime?.observeEnded { }?.dispose() }
     }
 }
